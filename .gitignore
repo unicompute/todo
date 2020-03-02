@@ -94,3 +94,6 @@ ios/fastlane/Matchfile
 !**/ios/**/default.perspectivev3
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 #!android/fastlane/metadata/android/en-US/changelogs/*
+.flutter-plugins-dependencies
+flutter_export_environment.sh
+Flutter.podspec
