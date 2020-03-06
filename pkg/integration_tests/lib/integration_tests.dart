@@ -12,7 +12,7 @@ import 'package:test/test.dart';
 import 'page_objects/page_objects.dart';
 
 main() {
-  final Map config = Config().config;
+  final Map config = Config('/tmp/').config;
   int screenshotCount = 0;
 
   group('Todo App Test', () {
@@ -20,7 +20,8 @@ main() {
     HomeTestScreen homeScreen;
 
     setUpAll(() async {
-      driver = await FlutterDriver.connect(timeoutMultiplier: 4);
+      // driver = await FlutterDriver.connect(timeoutMultiplier: 4);
+      driver = await FlutterDriver.connect();
       homeScreen = new HomeTestScreen(driver);
     });
 
