@@ -26,7 +26,8 @@ class AppState {
           return !todo.complete;
         } else if (activeFilter == VisibilityFilter.completed) {
           return todo.complete;
-        }
+        } else 
+          return false;
       }).toList();
 
   bool get hasCompletedTodos => todos.any((todo) => todo.complete);
